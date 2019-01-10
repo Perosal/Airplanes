@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+
+    android:background="@color/softWhite">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/boxBackground"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/players"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/player_table"
+                style="@style/AppTheme.TextView"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/your_table"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/players" />
+
+            <GridLayout
+                android:id="@+id/game_table"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:columnCount="11"
+                android:rowCount="11"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_table">
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView style="@style/AppTheme.TextView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/one" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/two" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/three" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/four" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/five" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/six" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/seven" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/eight" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/nine" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/ten" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/a" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/b" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/c" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/d" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/e" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/f" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/g" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/h" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/i" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/j" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/player_table2"
+                style="@style/AppTheme.TextView"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/enemy_table"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/game_table" />
+
+            <GridLayout
+                android:id="@+id/enemy_table"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:columnCount="11"
+                android:rowCount="11"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_table2">
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView style="@style/AppTheme.TextView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/one" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/two" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/three" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/four" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/five" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/six" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/seven" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/eight" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/nine" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/ten" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/a" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/b" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/c" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/d" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/e" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/f" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/g" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/h" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/i" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/CardViewText">
+
+                    <TextView
+                        style="@style/AppTheme.TextView"
+                        android:text="@string/j" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardViewOpponent">
+
+                    <ImageView style="@style/AppTheme.ImageView" />
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/functions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enemy_table"
+                tools:ignore="SmallSp">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="35dp">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/buttonStart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="start"
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/start"
+                    android:background="@drawable/button_style"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:onClick="reset"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/button_style"
+                    android:text="@string/reset"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

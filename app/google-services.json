@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "472756216848",
+    "firebase_url": "https://airplanes-83d81.firebaseio.com",
+    "project_id": "airplanes-83d81",
+    "storage_bucket": "airplanes-83d81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472756216848:android:ec86cc1aea1c6058",
+        "android_client_info": {
+          "package_name": "com.frozenbrain.airplanes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472756216848-7vrir7oq15m4sjie9dsg2m56h3tctohf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frozenbrain.airplanes",
+            "certificate_hash": "01b9d4f741956fe08f74bb346891b9c754b1c8ee"
+          }
+        },
+        {
+          "client_id": "472756216848-3eknk69vqti9lg9tuq0efvmgmbk9q9se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2QSyfbRDV715zsx3rvIwO5PNuOUg1Jl8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472756216848-3eknk69vqti9lg9tuq0efvmgmbk9q9se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
