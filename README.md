@@ -5,9 +5,14 @@
 Jocul popular pe hartie `Avioane` acum pe telefon.
 
 Se poate juca pe 2 telefoane cu un simplu login , introducand si numele oponentului.
+
 Reguli:
+
  • se introduce pana la 3 avioane in tabela de joc(daca gresiti dati `reset`)
+ 
  • se astepta oponetul si apasati pe `start`
+ 
  • pentru o mutare se va apasa in cea de-a doua masa , iar oponentul v-a spune daca a fost nimerit o parte din avion sau nu
+ 
  • cat timp se nimereste o bucata de avion se continua mutarea , altfel va urma mutarea oponentului
  
